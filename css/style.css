@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+body {
+  font: 700 16px/1.6 "Quicksand", sans-serif;
+  background: #e5eeee;
+  color: #fbf6e4;
+}
+a {
+  color: #fbf6e4;
+  position: relative;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+	display: inline-block;
+	border: none;
+	background: #26b168;
+	font-size: 18px;
+	color: #edf1df;
+	/* padding: 10px; */
+	width:100%;
+	height: 42px;
+	border: 2px solid transparent;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+	background: #fff;
+	color: #28b16a;
+	border-color: #28b16a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+}
+textarea {
+}
+
+.ba-wrapp {
+  background: url(../Vectorsmart.jpg) center no-repeat;
+  max-height: 500px;
+  max-width: 400px;
+  margin: auto;
+}
+.ba-container {
+  width: 302px;
+}
+.ba-tabl {
+  display: flex;
+  /* position: relative; */
+  padding: 50px 0 0;
+  margin: 0;
+  list-style: none;
+}
+.ba-head {
+  text-decoration: none;
+  margin-right: 24px;
+  font-size: 18px;
+  color: #e1c2f1;
+}
+.ba-tabl a::before {
+  content: "";
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #e66a64;
+  transition: 0.2s;
+  transform: scaleX(0);
+}
+.ba-head:hover::before {
+  color: #fbf6e4;
+  transform: scaleX(1);
+}
+.ba-head:hover {
+  color: #fbf6e4;
+}
+.ba-user {
+  padding-top: 41px;
+}
+.ba-field {
+  background: none;
+  outline: none;
+  height: 42px;
+  width: 100%;
+  border: 2px solid rgb(191, 185, 204, 0.54);
+  color: #9d86c8;
+  margin: 7px 0 0;
+  padding: 10px;
+}
+.ba-pass {
+  padding-top: 15px;
+}
+
+.ba-label {
+  display: flex;
+  align-items: center;
+  padding-top: 17px;
+}
+.ba-box {
+  display: none;
+}
+.ba-mirror {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #23ae92;
+  border: 2px solid #23ae92;
+  position: relative;
+}
+.ba-mirror::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url(../check.png);
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.2s;
+}
+.ba-box:checked + .ba-mirror::before {
+  opacity: 1;
+}
+.ba-text {
+  padding-left: 7px;
+}
+.ba-payment-form__footer{
+	padding-top: 40px;
+}
+
+.ba-finish {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 55px ;
+ }
+ 
+ .ba-finish a {
+	color: #6e65b9;
+	font-size: 13px;
+	font-weight: 400;
+	text-decoration: none;
+	border-bottom: 1px solid #413aaf;
+ }
+ 
+ .ba-finish a:hover {
+	color: #fff;
+	border-bottom: 1px solid pink;
+ }
