@@ -47,6 +47,7 @@ button:hover,
 	border-color: #28b16a;
 }
 
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -70,20 +71,26 @@ textarea {
 }
 
 .ba-wrapp {
-  background: url(../Vectorsmart.jpg) center no-repeat;
-  max-height: 500px;
-  max-width: 400px;
-  margin: auto;
+
+}
+.ba-content{
+	background: url(../body.jpg) center no-repeat;
+	max-width: 400px;
+	margin: auto;
+	background-size: cover;
+	padding:50px 70px;
 }
 .ba-container {
-  width: 302px;
+  /* width: 302px; */
+ 
 }
 .ba-tabl {
   display: flex;
   /* position: relative; */
-  padding: 50px 0 0;
-  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
   list-style: none;
+ 
 }
 .ba-head {
   text-decoration: none;
@@ -110,7 +117,7 @@ textarea {
   color: #fbf6e4;
 }
 .ba-user {
-  padding-top: 41px;
+ margin-top: 41px;
 }
 .ba-field {
   background: none;
@@ -118,18 +125,24 @@ textarea {
   height: 42px;
   width: 100%;
   border: 2px solid rgb(191, 185, 204, 0.54);
-  color: #9d86c8;
+  color: #fff;
   margin: 7px 0 0;
   padding: 10px;
 }
-.ba-pass {
-  padding-top: 15px;
+.ba-field:focus {
+	border: 2px solid rgb(4, 85, 236);
 }
-
+.ba-pass {
+	margin-top: 15px;
+}
+.ba-form{
+	color: #fbf6e4;
+}
 .ba-label {
   display: flex;
   align-items: center;
-  padding-top: 17px;
+  margin-top: 17px;
+  cursor: pointer;
 }
 .ba-box {
   display: none;
@@ -146,10 +159,10 @@ textarea {
   content: "";
   position: absolute;
   display: block;
-  background: url(../check.png);
+  background: url(../check.png) no-repeat;
   width: 10px;
   height: 10px;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -159,6 +172,7 @@ textarea {
   opacity: 1;
 }
 .ba-text {
+  font-size: 13px;
   padding-left: 7px;
 }
 .ba-payment-form__footer{
@@ -168,7 +182,7 @@ textarea {
 .ba-finish {
 	display: flex;
 	justify-content: space-between;
-	padding: 30px 0 55px ;
+	margin-top:25px ;
  }
  
  .ba-finish a {
